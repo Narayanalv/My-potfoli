@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800&display=swap');
+
+:root {
+  --bg: #050508;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(0, 240, 200, 0.35);
+  --text: #e8eaf0;
+  --text-muted: rgba(232, 234, 240, 0.5);
+  --accent: #00f0c8;
+  --accent-2: #0ea5e9;
+  --accent-gradient: linear-gradient(135deg, #00f0c8 0%, #0ea5e9 100%);
+  --glow: 0 0 30px rgba(0, 240, 200, 0.18);
+
+  color-scheme: dark;
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: 'Inter', system-ui, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse 60% 40% at 80% -10%, rgba(0, 240, 200, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 30% at 10% 100%, rgba(14, 165, 233, 0.07) 0%, transparent 60%),
+    var(--bg);
+}
+
+/* Grid noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.013) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.013) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section layout */
+.section-container {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Glass card */
+.glass-card {
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-accent);
+  box-shadow: var(--glow), 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Slide-up animation */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUpFade 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Pulsing dot for open-to-work badge */
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.45;
+    transform: scale(1.5);
+  }
+}
+
+/* Skill Chips — modern pill style */
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--chip-color, var(--accent)) 25%, transparent);
+  color: var(--text);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: default;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-chip:hover {
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--chip-color, var(--accent)) 10%, rgba(255, 255, 255, 0.04));
+  border-color: color-mix(in srgb, var(--chip-color, var(--accent)) 55%, transparent);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--chip-color, var(--accent)) 18%, transparent);
+}
+
+.skill-chip-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--chip-color, var(--accent));
+  flex-shrink: 0;
+  box-shadow: 0 0 8px var(--chip-color, var(--accent));
+}
+
+/* Section heading divider line */
+.section-divider {
+  height: 2px;
+  width: 40px;
+  border-radius: 2px;
+  background: var(--accent-gradient);
+  flex-shrink: 0;
+}
+
+/* Vertical Marquee (About) */
+.vertical-marquee-container {
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+}
+
+.vertical-marquee-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: scrollVertical 22s linear infinite;
+}
+
+.vertical-marquee-container:hover .vertical-marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(calc(-50% - 0.75rem));
+  }
+}

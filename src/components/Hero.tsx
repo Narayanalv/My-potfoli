@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
                             <span>✉️ {heroInfo.email}</span>
                         </div>
                         <div className="d-flex gap-3 justify-content-center">
-                            <Button href="/projects" variant="primary" size="lg" className="px-4 py-2 rounded-pill fw-semibold shadow" style={{ background: 'var(--accent-gradient)', border: 'none' }}>
+                            <Button href="/#/projects" variant="primary" size="lg" className="px-4 py-2 rounded-pill fw-semibold shadow" style={{ background: 'var(--accent-gradient)', border: 'none' }}>
                                 View My Work
                             </Button>
                             <Button href={`mailto:${heroInfo.email}`} variant="outline-light" size="lg" className="px-4 py-2 rounded-pill fw-semibold">

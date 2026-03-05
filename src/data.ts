@@ -5,9 +5,9 @@ export const heroInfo = {
     name: "Lakshmi Narayana V",
     title: "Software Developer",
     description: "Backend Developer with 2 years of experience building secure, scalable RESTful APIs and optimizing databases. Proven expertise in API architecture, database design, authentication systems, and maintaining high-traffic applications serving millions of users.",
-    phone: "+91 9906185776",
+    phone: "+91 9986185776",
     email: "Narayana070203@gmail.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://in.linkedin.com/in/lakshmi-narayana-v-356521186",
     location: "Bengaluru, India"
 };
 

@@ -9,10 +9,6 @@ const Footer: React.FC = () => {
         <div>
           Status: <span className="text-accent">200 OK</span> &bull; {heroInfo.name} &copy; {new Date().getFullYear()}
         </div>
-
-        <div>
-          Built with React, TypeScript &amp; JetBrains Mono
-        </div>
       </Container>
     </footer>
   );

@@ -107,19 +107,6 @@ const Skills: React.FC = () => {
               ],
             </div>
 
-            {/* AI / ML */}
-            <div className="ps-4 mt-2">
-              <span className="text-amber">"ai_and_vector_search"</span>: [
-              <div className="ps-4 d-flex flex-wrap gap-2 my-1">
-                {technicalSkills.aiMl.map((ai, idx) => (
-                  <span key={idx} className="toggle-tag">
-                    "{ai}"{idx < technicalSkills.aiMl.length - 1 ? ',' : ''}
-                  </span>
-                ))}
-              </div>
-              ],
-            </div>
-
             {/* Version Control */}
             <div className="ps-4 mt-2">
               <span className="text-amber">"version_control"</span>: [

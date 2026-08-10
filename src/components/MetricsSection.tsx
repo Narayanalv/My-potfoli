@@ -8,7 +8,6 @@ const partnerLogos = [
   "REACT & TYPESCRIPT",
   "FLUTTER & DART",
   "ANGULAR",
-  "PRISMA ORM",
   "MYSQL"
 ];
 

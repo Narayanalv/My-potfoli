@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
 
             {/* Code Metadata Line */}
             <div className="font-mono text-muted mb-4 p-3 rounded" style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border)', fontSize: '0.85rem' }}>
-              <span className="text-amber">const</span> candidate = &#123; experience: <span className="text-accent">"2.5+ Yrs (Octech Digital)"</span>, degree: <span className="text-accent">"MCA (KSOU 2026)"</span> &#125;;
+              <span className="text-amber">const</span> candidate = &#123; experience: <span className="text-accent">"2.7+ Yrs (Octech Digital)"</span>, degree: <span className="text-accent">"MCA (KSOU 2026)"</span> &#125;;
             </div>
 
             {/* CTA Buttons */}

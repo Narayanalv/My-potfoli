@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
         {/* Filter Pills */}
         <div className="scroll-reveal d-flex flex-wrap gap-2 mb-4 font-mono" style={{ transitionDelay: '160ms' }}>
           {[
-            { id: 'all', label: 'all_repos (5)' },
+            { id: 'all', label: `all_projects (${projectsList.length})` },
             { id: 'ai-backend', label: 'ai_backend' },
             { id: 'fullstack', label: 'fullstack_web' },
             { id: 'mobile', label: 'mobile_app' }
@@ -125,7 +125,7 @@ const Projects: React.FC = () => {
                   </div>
 
                   {/* Code & Live Links */}
-                  {(project.github || project.live) && (
+                  {(project.github || project.githubBackend || project.githubFrontend || project.live) && (
                     <div className="d-flex flex-wrap gap-3 pt-2 font-mono" style={{ fontSize: '0.85rem' }}>
                       {project.github && (
                         <a
@@ -137,12 +137,32 @@ const Projects: React.FC = () => {
                           [ repo_code ] ↗
                         </a>
                       )}
+                      {project.githubBackend && (
+                        <a
+                          href={project.githubBackend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-underline"
+                        >
+                          [ backend_repo ] ↗
+                        </a>
+                      )}
+                      {project.githubFrontend && (
+                        <a
+                          href={project.githubFrontend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-underline"
+                        >
+                          [ frontend_repo ] ↗
+                        </a>
+                      )}
                       {project.live && (
                         <a
                           href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="link-underline ms-auto"
+                          className="link-underline ms-auto text-accent"
                         >
                           [ live_demo ] ↗
                         </a>

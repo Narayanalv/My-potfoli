@@ -40,7 +40,7 @@ export const heroInfo = {
   roleTitle: "Software Developer",
   avatarUrl: "https://avatars.githubusercontent.com/u/89650810?v=4",
   tagline: "Java Spring Boot Specialist | RAG & Backend Architect",
-  summary: "Results-driven Software Engineer with 2.7 years of experience designing, developing, and maintaining scalable, high-quality applications. Experienced in building reliable backend systems, solving complex technical challenges, and delivering efficient, maintainable solutions that align with business objectives.",
+  summary: "Experienced Software Developer with 2.7 years of professional experience designing, developing, and maintaining highly scalable and highly performing backend systems and REST APIs. Strong object-oriented programming skills with practical experience building Java and Spring Boot applications. Solid relational database design, query optimization, authentication (JWT, 2FA), and AI API integration expertise. Comfortable working across the full software development lifecycle in a collaborative environment, with a strong emphasis on writing clean, maintainable, and secure code.",
   phone: "+91 99861 85776",
   email: "narayana070203@gmail.com",
   linkedin: "https://www.linkedin.com/in/lakshmi-narayana-v-356521186/",
@@ -79,7 +79,7 @@ export const workExperience: ExperienceItem[] = [
       "Architected Automated Campaign & API Orchestration Services (automated emailer, API runner within time windows, batch API trigger services).",
       "Designed Universal Dashboard system reducing redundant components and optimizing query retrieval speed in MySQL."
     ],
-    tech: ["Java", "Spring Boot", "Spring Security", "Slim (PHP)", "PostgreSQL", "MySQL", "JWT", "2FA", "Pine Labs Woohoo API", "REST APIs"]
+    tech: ["Slim (PHP)", "MySQL"]
   },
   {
     role: "Software Engineering Intern",
@@ -92,7 +92,7 @@ export const workExperience: ExperienceItem[] = [
       "Worked on relational database-based data access for tracking campaign activity and rewards across cross-functional engineering teams.",
       "Collaborated on code reviews, bug fixes, automated unit testing, and technical documentation."
     ],
-    tech: ["PHP", "Slim Framework", "MySQL", "JavaScript", "REST APIs", "Git"]
+    tech: ["PHP", "Slim Framework", "MySQL"]
   }
 ];
 
@@ -102,14 +102,12 @@ export const educationList: EducationItem[] = [
     institution: "Karnataka State Open University (KSOU)",
     period: "2024 – 2026",
     location: "Karnataka, India",
-    description: "Specializing in Advanced Software Engineering, Distributed Systems, Database Management, and AI/RAG Architectures."
   },
   {
     degree: "Bachelor of Computer Applications (BCA)",
     institution: "Lowry Adventist College",
     period: "2020 – 2023",
     location: "Bengaluru, India",
-    description: "Solid foundation in Data Structures, Object-Oriented Programming (Java), Web Engineering, and Relational Database Systems."
   }
 ];
 
@@ -130,27 +128,23 @@ export const projectsList: Project[] = [
       "pgvector + PostgreSQL for vector similarity search; Groq API for LLM inference — chosen for cost efficiency over running models locally.",
       "Secure document storage via Cloudinary; documents are parsed, chunked, and indexed automatically on upload."
     ],
-    tech: ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "pgvector", "Gemini API", "Groq API", "Angular", "Cloudinary"],
+    tech: ["Java", "Spring Boot", "PostgreSQL", "pgvector", "Angular", "LLM"],
     github: "https://github.com/Narayanalv/ChatbotAi",
     githubFrontend: "https://github.com/Narayanalv/chatbotFE"
   },
   {
     id: "fullstack-crud",
     title: "Full-Stack Auth & CRUD Platform",
-    subtitle: "Production-Deployed JWT Auth & Token Rotation System",
     category: "fullstack",
     categoryLabel: "Full-Stack Web App",
-    tag: "Live Production",
+    tag: "Learn Front End",
     featured: true,
-    description: "Production-deployed application with JWT authentication, refresh token rotation, and full CRUD operations — live on Render.",
+    description: "Application with JWT authentication, and full CRUD operations.",
     highlights: [
-      "Production-deployed application with JWT authentication, refresh token rotation, and full CRUD operations — live on Render.",
+      "full CRUD operations.",
       "Designed normalized PostgreSQL schema via Prisma ORM; implemented token blacklisting to prevent refresh-token reuse attacks."
     ],
     tech: ["React", "Node.js", "Express", "Prisma ORM", "PostgreSQL", "TypeScript", "JWT"],
-    github: "https://github.com/Narayanalv/reactFrontEnd",
-    githubBackend: "https://github.com/Narayanalv/expressBackEnd",
-    live: "https://reactfrontend-qb5y.onrender.com/"
   },
   {
     id: "tubestream",

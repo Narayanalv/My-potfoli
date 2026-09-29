@@ -71,14 +71,16 @@ export const workExperience: ExperienceItem[] = [
     location: "Bengaluru, India",
     type: "Full-Time",
     highlights: [
-      "Designed, developed, and maintained scalable backend microservices and high-throughput RESTful APIs using Java Spring Boot and PHP (Slim Framework).",
-      "Engineered 'Analytics Genie' enterprise reporting platform to reliably process millions of traffic events across marketing campaigns (Bigcity, Pine Labs).",
-      "Integrated Pine Labs Woohoo platform to enable order-placement-based reward issuance and automated tracking.",
-      "Built encrypted Excel report generation for secure report delivery and search APIs for mobile-number user lookups.",
-      "Engineered Two-Factor Authentication (2FA) via OTP/Email, stateless JWT authentication pipelines, and Spring Security.",
-      "Architected Automated Campaign & API Orchestration Services (automated emailer, API runner within time windows, batch API trigger services).",
-      "Designed Universal Dashboard system reducing redundant components and optimizing query retrieval speed in MySQL."
-    ],
+  "Engineered a scalable analytics and reporting platform capable of processing millions of traffic events, designing the relational data access layer to deliver reliable reporting and campaign performance tracking.",
+  "Built a generic, reusable analytics infrastructure adopted across multiple marketing campaigns, standardizing reporting and reducing development effort.",
+  "Designed and developed RESTful APIs, including a mobile-number search API for user lookup and a configuration-driven pages API for dynamically managing static content without frontend deployments.",
+  "Implemented Two-Factor Authentication (2FA) and encrypted Excel report generation to secure user access and protect sensitive reporting data across environments.",
+  "Troubleshot, debugged, and optimized application performance and MySQL queries to efficiently handle high-volume event processing.",
+  "Collaborated with cross-functional teams throughout the SDLC, participating in requirement analysis, technical design, implementation, testing, and project delivery.",
+  "Developed an automated email service that sends emails based on configurable scheduling and business rules.",
+  "Built configuration-driven API orchestration services, including a time-window API runner and configurable batch API execution service.",
+  "Designed independent, configuration-driven orchestration services that decoupled scheduling and execution logic from campaign-specific business workflows."
+],
     tech: ["Slim (PHP)", "MySQL"]
   },
   {
